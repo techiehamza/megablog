@@ -7,7 +7,7 @@ const Postcard = ({ $id, title, featuredImage }) => {
         <Link to={`/post/${$id}`} >
             <div className='w-full bg-gray-100 rounded-xl p-4'>
                 <div className='w-full justify-center mb-4'>
-                    <img src={appwrtieService.getFilePreview(featuredImage)} alt={title}  />
+                    <img src={appwrtieService.getFileView(featuredImage)} alt={title}  />
                 </div>
 
                 <h2 className='text-lg font-semibold'>{title}</h2>
